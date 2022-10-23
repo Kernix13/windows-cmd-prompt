@@ -2,6 +2,8 @@
 
 The table of contents items are external links. The first link has a lot of the most common commands, as does the 2nd link. But the final 2 links are very informative so read those articles from top-to-bottom!
 
+- Press `WIN + R`, type in `powershell`, press `Ctrl+Shift+Enter`. Click `OK` to run as Administrator
+
 <div id="back-to-top"></div>
 
 ## Table of Contents
