@@ -8,8 +8,8 @@
 1. [BASIC COMMANDS](#basic-commands)
 1. [NETWORK and INTERNET](#network-and-internet)
 1. [DRIVES](#drives)
-1. [BASIC COMPUTER COMMANDS](#basic-computer-commands)
-1. [ADVANCED and REPAIR COMMANDS](#ADVANCED=AND-REPAIR-COMMANDS)
+1. [POWER and TASK COMMANDS](#power-and-task-commands)
+1. [ADVANCED and REPAIR COMMANDS](#advanced-and-repair-commands)
 1. [MISCELLANEOUS COMMANDS](#miscellaneous-commands)
 
 ## GENERAL NOTES
@@ -167,7 +167,7 @@ netsh wlan stop hostednetwork
 
 <div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
-## BASIC COMPUTER COMMANDS
+## POWER and TASK COMMANDS
 
 - **POWERCFG**: Power Configuration - control power settings, configure hybernate/standby modes - to track energy usage - it could be that your power settings are configured as efficiently as possible
 - Run the command prompt as an administrator and type `powercfg` – energy to get a full power efficiency report - you’ll see whether there are any warnings or errors that might help you improve the power efficiency of your system
