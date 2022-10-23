@@ -1,14 +1,33 @@
 # Command Prompt Commands
 
+<div id="back-to-top"></div>
+
+## Table of Contents
+
+1. [GENERAL NOTES](#general-notes)
+1. [BASIC COMMANDS](#basic-commands)
+1. [NETWORK and INTERNET](#network-and-internet)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+
+DRIVES
+BASIC COMPUTER STUFF
+ADVANCED & REPAIR
+MISCELLANEOUS
+
 ## MISCELLANEOUS
 
-- Open command prompt by typing `cmd` in the run box or `Win + R`
+- Open command prompt by typing `cmd` in the run box or use the keys `Win + R` and then enter `cmd`
 - Good Links:
   - [Cmd commands under Windows](https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windowshttps://ss64.com/nt/)
   - [The Complete List of Command Prompt (CMD) Commands](https://www.lifewire.com/list-of-command-prompt-commands-4092302)
   - [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 
-`C:\Users\Jim>`
+Why do I have this: `C:\Users\Jim>`
 
 ## BASIC COMMANDS
 
@@ -55,7 +74,11 @@ Microsoft has started the process of switching from the good old Command Prompt 
 dir /b > C:\Users\14844\Music\Covers\myfiles.txt => output in myfiles.txt
 ```
 
-## INTERNET, DRIVES & NETWORK BASED
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
+## NETWORK and INTERNET
+
+> REVIEW THIS ENTIRE SECTION
 
 - **IPCONFIG**: IP configuration - returns detailed information about your current network adapter connection including Current IP Address, Subnet Mask, Default Gateway IP, Current domain
 - can help you troubleshoot router issues and other connection issues you could be having with your network adapter - see your ip, gateway, dns and other info - internet protocol configuration
@@ -69,8 +92,8 @@ C:\Users\Jim>ipconfig /flushdns
 C:\Users\Jim>ipconfig/all
 ```
 
-- to flush dns address (?) - adding `/release` and `/renew` to have your pc ask for a new ip address (?) -
-- you can type your router ip address into the web browser and enter `admin` for user and `password` for pw or no pw or pw of admin – or know your router pw
+- To flush dns address (?) - adding `/release` and `/renew` to have your pc ask for a new ip address (?) -
+- You can type your router ip address into the web browser and enter `admin` for user and `password` for pw or no pw or pw of admin – or know your router pw
 - **NETSTAT**: network statistics - `netstat -an` - List Network Connections and Ports, lists open ports and related ip addresses and what state the port is in
 - to check if you have malware running on your computer that’s connecting to internet locations without you knowing about it
 - you can get a list of all active TCP connections from your computer
@@ -104,6 +127,10 @@ C:\Users\Jim>ping www.google.com
 ```sh
 C:\Users\Jim>tracert www.google.com
 ```
+
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
+## DRIVES
 
 - `NET USE`: Map drives - If you want to map a new drive, you could always open File Explorer, right-click on This PC, and go through the Map Network Drive wizard.
 - However, using the NET USE command, you can do the same thing with one command string (?)
@@ -146,6 +173,8 @@ netsh wlan stop hostednetwork
 - Windows 10 comes with a built-in tool that lets users create a WiFi hotspot. You can read our detailed post know how to enable mobile hotspot in Windows 10
 - **BITSADMIN**: Initiate upload or download jobs over the network or internet and monitor the current state of those file transfers: `bitsadmin /?` or `bitsadmin /help`
 
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
 ## BASIC COMPUTER STUFF
 
 - **POWERCFG**: Power Configuration - control power settings, configure hybernate/standby modes - to track energy usage - it could be that your power settings are configured as efficiently as possible
@@ -182,6 +211,8 @@ SCHTASKS /Create /SC HOURLY /MO 12 /TR Example /TN c:\temp\File1.bat
 C:\Users\Jim>chkdsk C: /f /r /x
 ```
 
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
 ## ADVANCED & REPAIR
 
 - **SFC**: System File Checker - scans for problems and repairs system files - concerned that a virus or some other software might have corrupted your core system files...scan those files and ensure their integrity
@@ -211,7 +242,9 @@ robocopy c:\users\ellen\documents f:\mybackup\documents /copyall /e /r:0 /dcopy:
 - `ROBOCOPY`: A powerful file copy utility built right into Windows
 - Format: used to format a specified partition on a hard drive (internal or external), flash drive, or floppy disk to a specified file system
 
-## UNSURE CATEGORY
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
+## MISCELLANEOUS
 
 - `ATTRIB`: Change File Attributes - In Windows, you can change file attributes by right-clicking on a file and finding the right property to change. However, instead of hunting around for the file attribute, you can use the ATTRIB command to set the file attributes
 - For example, if you type: `ATTRIB +R +H C:\temp\File1.bat`, it’ll set `File1.bat` as a hidden, read-only file
@@ -257,3 +290,5 @@ F7: Displays a selectable list of previously executed commands
 F8: Pastes recently executed commands (cycles)
 F9: Asks for the number of the command from the F7 list to paste
 ```
+
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
