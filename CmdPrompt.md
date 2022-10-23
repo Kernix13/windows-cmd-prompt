@@ -7,25 +7,17 @@
 1. [GENERAL NOTES](#general-notes)
 1. [BASIC COMMANDS](#basic-commands)
 1. [NETWORK and INTERNET](#network-and-internet)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
+1. [DRIVES](#drives)
+1. [BASIC COMPUTER COMMANDS](#basic-computer-commands)
+1. [ADVANCED and REPAIR COMMANDS](#ADVANCED=AND-REPAIR-COMMANDS)
+1. [MISCELLANEOUS COMMANDS](#miscellaneous-commands)
 
-DRIVES
-BASIC COMPUTER STUFF
-ADVANCED & REPAIR
-MISCELLANEOUS
-
-## MISCELLANEOUS
+## GENERAL NOTES
 
 - Open command prompt by typing `cmd` in the run box or use the keys `Win + R` and then enter `cmd`
 - Good Links:
-  - [Cmd commands under Windows](https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windowshttps://ss64.com/nt/)
-  - [The Complete List of Command Prompt (CMD) Commands](https://www.lifewire.com/list-of-command-prompt-commands-4092302)
-  - [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+  - [The Complete List of Command Prompt (CMD) Commands](https://www.lifewire.com/list-of-command-prompt-commands-4092302): a Lifewire article so you know it's good!
+  - [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands): a huge list of commands
 
 Why do I have this: `C:\Users\Jim>`
 
@@ -116,6 +108,8 @@ C:\Users\Jim>ping www.google.com
 
 - you could ping a website to see if it is down – if you do not get a reply, it is down – or if you are somewhere that blocks a website, you can use cmd prompt (if possible) to get the ip address of that site then just type the ip address into the web browser to go to that website
 - `pathping`: trace route and provide network latency & packet loss - `pathping xxx.xxx.x.x` (ip address)
+- **BITSADMIN**: Initiate upload or download jobs over the network or internet and monitor the current state of those file transfers: `bitsadmin /?` or `bitsadmin /help`
+- `nslookup`: Find the IP Address Associated With a Domain - When you type a domain name into a browser address bar, your computer looks up the IP address associated with that domain name. You can use the `nslookup` command to find that information out for yourself
 - **TracerT** - similar to `pathping` - `trace route` - traces the route it takes for a packet to reach a destination and shows you information about each hop along that route
 - If you’re having issues connecting to a website, `tracert` can show you where the problem is occurring - displaying the route path between your pc to website
 - If you’re ever curious to see the path your internet traffic takes to get from your browser to a remote system like Google servers
@@ -137,7 +131,6 @@ C:\Users\Jim>tracert www.google.com
 - `telnet`: Connect to Telnet Servers - The telnet client isn’t installed by default. Instead, it’s one of the optional Windows features that you can install through the Control Panel.
 - Once installed, you can use the `telnet` command to connect to telnet servers without installing any third-party software
 - You should avoid using `telnet` if you can help it, but if you’re connected directly to a device and it requires that you use telnet to set something up
-- `nslookup`: Find the IP Address Associated With a Domain - When you type a domain name into a browser address bar, your computer looks up the IP address associated with that domain name. You can use the `nslookup` command to find that information out for yourself
 - You can also perform a reverse lookup by typing an IP address to find out the associated domain name
 
 ```sh
@@ -171,11 +164,10 @@ netsh wlan stop hostednetwork
 ```
 
 - Windows 10 comes with a built-in tool that lets users create a WiFi hotspot. You can read our detailed post know how to enable mobile hotspot in Windows 10
-- **BITSADMIN**: Initiate upload or download jobs over the network or internet and monitor the current state of those file transfers: `bitsadmin /?` or `bitsadmin /help`
 
 <div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
-## BASIC COMPUTER STUFF
+## BASIC COMPUTER COMMANDS
 
 - **POWERCFG**: Power Configuration - control power settings, configure hybernate/standby modes - to track energy usage - it could be that your power settings are configured as efficiently as possible
 - Run the command prompt as an administrator and type `powercfg` – energy to get a full power efficiency report - you’ll see whether there are any warnings or errors that might help you improve the power efficiency of your system
@@ -213,7 +205,7 @@ C:\Users\Jim>chkdsk C: /f /r /x
 
 <div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
-## ADVANCED & REPAIR
+## ADVANCED and REPAIR COMMANDS
 
 - **SFC**: System File Checker - scans for problems and repairs system files - concerned that a virus or some other software might have corrupted your core system files...scan those files and ensure their integrity
 - You need to launch CMD as administrator (right-click and choose Run as Administrator). Typing `sfc /scannow` will check the integrity of all protected system files.
@@ -244,7 +236,7 @@ robocopy c:\users\ellen\documents f:\mybackup\documents /copyall /e /r:0 /dcopy:
 
 <div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
-## MISCELLANEOUS
+## MISCELLANEOUS COMMANDS
 
 - `ATTRIB`: Change File Attributes - In Windows, you can change file attributes by right-clicking on a file and finding the right property to change. However, instead of hunting around for the file attribute, you can use the ATTRIB command to set the file attributes
 - For example, if you type: `ATTRIB +R +H C:\temp\File1.bat`, it’ll set `File1.bat` as a hidden, read-only file
